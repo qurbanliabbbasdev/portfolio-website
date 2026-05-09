@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Abbas Qurbanli – 11th grade student, aspiring cybersecurity specialist, game developer and web enthusiast.">
+  <title>Abbas Qurbanli | 11th grade portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eef2f7;
+      font-family: 'Segoe UI', system-ui, 'Helvetica Neue', sans-serif;
+      padding: 2rem 1.5rem;
+      color: #1a2c3e;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 2rem;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      border: 1px solid #cbdde6;
+    }
+
+    .header {
+      background: #1e3a4d;
+      padding: 2rem 2rem 1.5rem;
+      color: white;
+      border-bottom: 4px solid #f4c542;
+    }
+
+    .name {
+      font-size: 2.5rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .grade-badge {
+      background: #f4c542;
+      color: #1e2f3a;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.3rem 1rem;
+      border-radius: 60px;
+    }
+
+    .school-tag {
+      background: rgba(255, 255, 240, 0.15);
+      display: inline-block;
+      padding: 0.3rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .quote {
+      margin-top: 1rem;
+      border-left: 3px solid #f4c542;
+      padding-left: 1rem;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+
+    .content {
+      padding: 2rem 2rem 2.5rem;
+    }
+
+    .section {
+      margin-bottom: 2.2rem;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      background: #fef3e2;
+      display: inline-block;
+      padding: 0.2rem 1.2rem;
+      border-radius: 40px;
+      margin-bottom: 1.2rem;
+      color: #1e566b;
+      border: 1px solid #ffe1b3;
+    }
+
+    .card {
+      background: #fafcff;
+      border-radius: 1.5rem;
+      padding: 1.2rem 1.5rem;
+      border: 1px solid #dce7ef;
+    }
+
+    .scores {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem 0 0.5rem;
+    }
+
+    .score-chip {
+      background: #ecf7fa;
+      border-radius: 40px;
+      padding: 0.4rem 1.2rem;
+      font-weight: 500;
+      border: 1px solid #bfdbe5;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.5rem;
+    }
+
+    .skill {
+      background: #e2ebf0;
+      padding: 0.3rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #144d5e;
+    }
+
+    .project {
+      background: white;
+      border: 1px solid #d4e2ec;
+      border-radius: 1.5rem;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1rem;
+      transition: all 0.1s ease;
+    }
+
+    .project:hover {
+      background: #fefef7;
+      border-color: #c2d3df;
+    }
+
+    .project-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .link {
+      color: #1f6c82;
+      text-decoration: none;
+      border-bottom: 1px dashed #9ab7c7;
+      word-break: break-all;
+    }
+
+    .link:hover {
+      color: #0f475a;
+    }
+
+    .portfolio-note {
+      background: #fff3e0;
+      border-radius: 1.2rem;
+      padding: 0.8rem 1.2rem;
+      margin-bottom: 1.2rem;
+      border-left: 6px solid #f4b942;
+      font-family: monospace;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .contact-btn {
+      background: #ecf7fa;
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      color: #1e3a4d;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid #cbdde6;
+      transition: 0.1s;
+    }
+
+    .contact-btn:hover {
+      background: #d9e9ef;
+      transform: translateY(-1px);
+    }
+
+    .future-box {
+      background: #eef4f9;
+      padding: 1.2rem 1.5rem;
+      border-radius: 1.5rem;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.75rem;
+      color: #587e8f;
+      border-top: 1px solid #cbdbe2;
+      padding-top: 1.5rem;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem;
+      }
+      .name {
+        font-size: 1.8rem;
+      }
+      .content {
+        padding: 1.5rem;
+      }
+      .section-title {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="name">
+      Abbas Qurbanli
+      <span class="grade-badge">11th grade · final year</span>
+    </div>
+    <div class="school-tag">🏫 preparing for university (CS / IT)</div>
+    <div class="quote">"I built this site with HTML, CSS & JS — no templates, just my own effort."</div>
+  </div>
+
+  <div class="content">
+    <!-- journey & exam results -->
+    <div class="section">
+      <div class="section-title">📖 my journey</div>
+      <div class="card">
+        <p>I'm an 11th grade student (last year of school) and deeply passionate about tech & cybersecurity.</p>
+        <div class="scores">
+          <div class="score-chip">🎯 9th grade: 273/300 (3rd in school)</div>
+          <div class="score-chip">📘 11th grade (latest exam): ~250/300</div>
+        </div>
+        <p>Despite preparing for university, I keep building projects: games, websites, and interactive tools. I'm ready to commit fully to the cybersecurity program.</p>
+      </div>
+    </div>
+
+    <!-- skills -->
+    <div class="section">
+      <div class="section-title">⚙️ tech skills</div>
+      <div class="skills">
+        <span class="skill">HTML5</span>
+        <span class="skill">CSS3</span>
+        <span class="skill">JavaScript (ES6)</span>
+        <span class="skill">Python</span>
+        <span class="skill">Algorithmic design</span>
+        <span class="skill">Alplogo</span>
+        <span class="skill">Unity C#</span>
+        <span class="skill">Game development</span>
+        <span class="skill">Responsive design</span>
+      </div>
+      <p style="margin-top: 0.8rem; font-size: 0.9rem;">🔨 Plus: web experiments, mini apps, and game mechanics.</p>
+    </div>
+
+    <!-- projects & portfolio -->
+    <div class="section">
+      <div class="section-title">🌍 projects</div>
+      <div class="portfolio-note">
+        📁 <strong>Portfolio website</strong> — <a href="http://abbas.qurbanli.com" target="_blank" rel="noopener" class="link">abbas.qurbanli.com</a> (hand-coded with HTML/CSS/JS)
+      </div>
+      <div class="project">
+        <div class="project-title">🎮 SolveLabyrinth3D</div>
+        <div>3D maze puzzle game made with Unity & C#. Published on itch.io.</div>
+        <div>🔗 <a href="https://qurbanlitechnologies.itch.io/solvelabyrinth3d" target="_blank" rel="noopener" class="link">qurbanlitechnologies.itch.io/solvelabyrinth3d</a></div>
+        <div style="margin-top: 0.5rem;"><span style="background:#eceff3; padding:0.2rem 0.7rem; border-radius:20px; font-size:0.7rem;">student project – full logic by me</span></div>
+      </div>
+      <div class="project">
+        <div class="project-title">✨ other web experiments</div>
+        <div>Interactive calculators, responsive layouts, and small frontend apps. Continuously learning backend fundamentals.</div>
+      </div>
+    </div>
+
+    <!-- motivation & alignment -->
+    <div class="section">
+      <div class="section-title">🎯 why cybersecurity</div>
+      <div class="future-box">
+        <p><strong>💡 Commitment:</strong> I believe this program will boost my skills more than any regular degree. I'm ready to follow the schedule, complete assignments, and be fully accountable.</p>
+        <p style="margin-top: 0.8rem;"><strong>🚀 Future vision:</strong> After the program, I aim to combine my coding background (C#, Python, web) with cybersecurity to build secure systems. As a graduating 11th grader, I'll be one of the youngest but most dedicated participants.</p>
+        <p style="margin-top: 0.8rem;">✅ I accept the binding commitment, attendance rules, and consequences of non-compliance. No excuses.</p>
+      </div>
+    </div>
+
+    <!-- contact & social: linkedin, email, github -->
+    <div class="section">
+      <div class="section-title">📬 contact</div>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/abbas-qurbanli-976935409/" target="_blank" rel="noopener" class="contact-btn">🔗 LinkedIn</a>
+        <a href="mailto:abbas@qurbanli.com" class="contact-btn">✉️ abbas@qurbanli.com</a>
+        <a href="https://github.com/qurbanliabbbasdev" target="_blank" rel="noopener" class="contact-btn">🐙 GitHub</a>
+        <a href="http://abbas.qurbanli.com" target="_blank" rel="noopener" class="contact-btn">🌐 Portfolio</a>
+      </div>
+      <p style="text-align: center; margin-top: 1rem; font-size: 0.8rem;">Feel free to connect — I reply within 48 hours.</p>
+    </div>
+
+    <div class="footer">
+      ⚡ Built from scratch by Abbas Qurbanli, 11th grade student<br>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    // Simple hover enhancement for skills and smooth external links
+    const skills = document.querySelectorAll('.skill');
+    skills.forEach(s => {
+      s.addEventListener('mouseenter', () => s.style.transform = 'scale(1.02)');
+      s.addEventListener('mouseleave', () => s.style.transform = 'scale(1)');
+    });
+    // Ensure all external links open securely
+    const links = document.querySelectorAll('a[href^="http"]');
+    links.forEach(link => {
+      if (!link.getAttribute('target')) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+  })();
+</script>
+</body>
+</html>
