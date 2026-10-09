@@ -32,19 +32,18 @@ I'm a backend-focused developer with deep expertise in Python and strong foundat
 
 ### 📌 Featured Projects
 
-#### [Project 1 Name](https://github.com/yourusername/project-1)
-Brief 1–2 sentence description of what this project does and what problem it solves.
-- **Tech used:** Python, [Libraries/Frameworks]
-- Key highlight or feature built.
+#### [SolveLabyrinth3D](https://qurbanlitechnologies.itch.io/solvelabyrinth3d)
+This is a labyrinth game consisting of some levels.It made with unity game engine using c# programming language.  
+- Tech used: Unity,C#
+- It is my first game.
 
-#### [Project 2 Name](https://github.com/yourusername/project-2)
-Brief 1–2 sentence description of the project.
+#### [My Portfolio]((https://github.com/qurbanliabbbasdev/portfolio-website)
+This is my introducing website.
 - **Tech used:** JavaScript, HTML, CSS
-- Key highlight or feature built.
+- Intro to my publicity.
 
 ---
 
 ### 📫 Connect With Me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailtoqurbanliabbbasdev:@gmail.com)
+*
+  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:qurbanliabbbasdev@gmail.com)
